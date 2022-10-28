@@ -1,0 +1,25 @@
+{
+    "name": "adamkiss/kirby-goat-counter",
+    "description": "Simple Goat Counter plugin for the Kirby CMS",
+    "type": "kirby-plugin",
+	"version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Kiss",
+            "email": "iam@adamkiss.com"
+        },
+        {
+            "name": "Florian Karsten",
+            "email": "code@floriankarsten.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1",
+		"getkirby/cms": "^3.6.0"
+    },
+    "autoload": {},
+    "config": {
+        "optimize-autoloader": true
+    }
+}

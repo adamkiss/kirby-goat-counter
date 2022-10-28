@@ -1,0 +1,11 @@
+.goat-counter-iframe {
+  width: 1px;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+/* @media (max-width: 850px) {
+  .goat-counter-iframe {
+    height: 2300px;
+  }
+} */
