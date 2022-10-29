@@ -53,8 +53,19 @@ Kirby::plugin('adamkiss/goat-counter', [
 			// try to get around the Cross-Origin with the javascript
 			'pattern' => 'adamkiss/goat-counter-proxy/(:any)',
 			'action' => function(string $file) {
+				$siteName = option('adamkiss.goat-counter.site-name');
+
 				if (str_contains($file, 'js')) {
 					$content = Remote::get("https://static.zgo.at/{$file}?v=".kirby()->request()->query()->get('v'))->content();
+
+					if (str_contains($file, 'dashboard')) {
+						$content = str_replace(
+							"window.WEBSOCKET = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + document.location.host + '/loader?id=' + cid)",
+							"window.WEBSOCKET = new WebSocket('wss://{$siteName}.goatcounter.com/loader?id=' + cid)",
+							$content
+						);
+					}
+
 					return new Response($content, 'text/javascript');
 				}
 			},
