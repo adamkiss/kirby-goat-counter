@@ -1,11 +1,42 @@
 .goat-counter-iframe {
   width: 1px;
   min-width: 100%;
-  min-height: 100vh;
+  height: 2800px;
 }
 
-/* @media (max-width: 850px) {
+@media (min-width: 465px) {
   .goat-counter-iframe {
-    height: 2300px;
+    height: 3300px;
   }
-} */
+}
+
+@media (min-width: 480px) {
+  .goat-counter-iframe {
+    height: 2800px;
+  }
+}
+
+@media (min-width: 512px) {
+  .goat-counter-iframe {
+    height: 3300px;
+  }
+}
+
+@media (min-width: 817px) {
+  .goat-counter-iframe {
+    height: 2500px;
+  }
+}
+
+@media (min-width: 977px) {
+  .goat-counter-iframe {
+    height: 2200px;
+  }
+}
+
+@media (min-width: 1605px) {
+  .goat-counter-iframe {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
