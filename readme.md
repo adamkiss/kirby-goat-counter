@@ -24,6 +24,10 @@ Frontend snippet to be placed in your HTML. Automatically disabled in the debug 
 <?php snippet('goat-counter'); ?>
 ```
 
+## FAQ: It doesn't work, the panel shows "You need to log in" screen
+
+This is the result of how Goat Counter uses the access token. It creates a cookie and then refreshes the UI. The result is, that if you have **cross-site tracking prevention** enabled, the [site].goatcounter.com will not see the "access-token" cookie and won't show the analytics. Create an exception for your domain to see the analytics.
+
 ## License
 
 MIT
