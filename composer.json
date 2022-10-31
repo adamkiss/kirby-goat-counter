@@ -2,7 +2,7 @@
     "name": "adamkiss/kirby-goat-counter",
     "description": "Simple Goat Counter plugin for the Kirby CMS",
     "type": "kirby-plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
     "license": "MIT",
     "authors": [
         {
