@@ -1,3 +1,8 @@
+> [!WARNING]
+> **ARCHIVED in Q1 2024**  
+> Since Goat counter still uses a token → cookie → redirect strategy, it's nearly impossible to reliably
+> embed even a public stats page via <iframe>. This plugin is thus archived.
+
 # Kirby Goat Counter
 Simple plugin providing goat counter iframe panel view to kirby panel and a simple frontend snippet.
 
